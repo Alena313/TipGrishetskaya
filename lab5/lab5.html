@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5 Ex 2-4</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            width: 900px;
+            text-align: center;
+            margin: auto;
+            background-color: bisque;
+        }
+        .hidden 
+        {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <span style="font-size: 20px;">выберите маникюр для увеличения</span>
+    <div>
+        <img src="k1.jpg" width="250" height="250" name="img1_1" onmouseover="Zoom(1)" onmouseout="Zoom(2)">
+        <img src="k2.jpg" width="250" height="250" name="img1_2" onmouseover="Zoom(2)" onmouseout="Zoom(2)">
+        <img src="k3.jpg" width="250" height="250" name="img1_3" onmouseover="Zoom(3)" onmouseout="Zoom(2)">
+    </div>
+    <div>
+        <img width="500" height="500" name="image">
+    </div>
+    <span style="font-size: 20px;">взгляд из далека и близи, а так же сравнение </span>
+
+    <div>
+        <img src="k1.jpg" width="150" height="150" name="img2_1" onmouseover="makeBigg(img2_1)"
+         imgonmouseout="makeSmall(img2_1)">
+        <img src="k2.jpg" width="150" height="150" name="img2_2" onmouseover="makeBigg(img2_2)"
+         imgonmouseout="makeSmall(img2_2)">
+        <img src="k3.jpg" width="150" height="150" name="img2_3" onmouseover="makeBigg(img2_3)"
+            onmouseout="makeSmall(img2_3)">
+    </div>
+    <p></p>
+    <span style="font-size: 20px;">убедитесь, что выбрали правильный (стрелочка Вам поможет)</span>
+
+    <div>
+        <img src="li.png" width="90" name="png_1" style="visibility:hidden">
+        <img src="li.png" width="90" name="png_2" style="visibility:hidden">
+        <img src="li.png" width="90" name="png_3" style="visibility:hidden">
+    </div>
+    <div>
+        <img src="k1.jpg" width="100" height="100" name="img3_1" onmouseover="Show(png_1)" onmouseout="Hide(png_1)">
+        <img src="k2.jpg" width="100" height="100" name="img3_2" onmouseover="Show(png_2)" onmouseout="Hide(png_2)">
+        <img src="k3.jpg" width="100" height="100" name="img3_3" onmouseover="Show(png_3)" onmouseout="Hide(png_3)">
+    </div>
+    <div>
+        <input type="text" size=7 name="res" ondblclick="mn(5,9)" id="44">
+    </div>
+</body>
+
+</html>

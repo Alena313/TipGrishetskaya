@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(lab7.css);
+    </style>
+    <script src="lab7.js"></script>
+</head>
+
+<body>
+    <form name="form1">
+        <div style="align-content:  center;">
+
+
+            <table>
+                <tr>
+                    <th>
+                        название блюд
+                    </th>
+                    <th>
+                        размер порции
+                    </th>
+                    <th>
+                        цена
+                    </th>
+                   
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> кортофель фри</td>
+                    <td> <input type="radio" value="60" name="free1" id="small1" onclick="cost(1)"> маленькая
+                        <input type="radio" value="70" name="free1" id="average1" onclick="cost(1)"> средняя
+                        <input type="radio" value="80" name="free1" id="big1" onclick="cost(1)"> большая
+                    </td>
+                    <td><input type="text" id="price1"> </td>
+                    
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> картофель по деревенски</td>
+                    <td> <input type="radio" value="60" name="free2"   onclick="cost(2)"> маленькая
+                        <input type="radio" value="70" name="free2" onclick="cost(2)"> средняя
+                        <input type="radio" value="80" name="free2"  id="big2" onclick="cost(2)"> большая
+                    </td>
+                    <td><input type="text" id="price2"> </td>
+                    
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> ребрышки</td>
+                    <td> <input type="radio" value="80" name="free3"onclick="cost(3)"> маленькая
+                        <input type="radio" value="110" name="free3" onclick="cost(3)"> средняя
+                        <input type="radio" value="130" name="free3" id="big3" onclick="cost(3)"> большая
+                    </td>
+                    <td><input type="text" id="price3"> </td>
+                    
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> нагетсы</td>
+                    <td> <input type="radio" value="90"  name="free4" onclick="cost(4)"> маленькая
+                        <input type="radio" value="100" name="free4"  onclick="cost(4)"> средняя
+                        <input type="radio" value="130" name="free4"  id="big4" onclick="cost(4)"> большая
+                    </td>
+                    <td><input type="text" id="price4"> </td>
+                    
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> салат цезарь</td>
+                    <td>
+
+                        <input type="radio" value="160"  name="free5" onclick="cost(5)"> маленькая
+                        <input type="radio" value="180" name="free5"  onclick="cost(5)"> средняя
+                        <input type="radio" value="200" name="free5"  id="big5" onclick="cost(5)"> большая
+                    </td>
+                    <td><input type="text" id="price5"> </td>
+                    
+                </tr>
+
+            </table> 
+             <select id="sel" class="put">
+                <option value="first">
+                    Доставка
+                </option>
+                <option value="second">
+                    Самовывоз
+                </option>
+            </select>
+            <hr>
+            <input type="button" value="итог" onclick="ewq()">
+            <textarea id="finally"> </textarea>
+        </div>
+        
+           
+    </form>
+</body>
+
+</html>

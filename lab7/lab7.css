@@ -1,0 +1,25 @@
+table
+{
+   text-align: center;
+    /*убираем пустые промежутки между ячейками*/
+    border: 2px solid black;
+    /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    width: 900px;
+}
+th, td {
+    border: 1px solid ;
+ }
+ .main
+ {
+    align-content: center;
+ }
+ .put{
+   position: relative;
+   bottom: 167px;
+   left:900px
+}
+textarea
+{
+   width: 250px;
+   height: 100px;
+}

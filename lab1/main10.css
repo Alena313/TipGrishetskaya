@@ -1,0 +1,120 @@
+
+.blue{color:blue;}
+
+.center
+{
+    text-align: center;
+    
+}
+table{
+width: 500px;
+font-size: 20px;
+    margin: auto;
+    border: 2px double black;
+}
+.left{text-align:left;}
+.right{text-align:right;}
+.italic
+{
+    font-style: italic;
+    font-size: 2em;
+}
+.first_img
+{
+    position: relative;
+   width: 150px;
+   left:200px;
+    height: auto;
+    
+}
+.second_img
+{
+    position:relative;
+    left:700px;
+    width: 180px;
+}
+.main
+{    
+position: static; 
+width:1500px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+margin: auto;
+}
+.indent
+{
+text-indent: 60px;
+
+}
+
+td{
+    text-align: center;
+   border: 1px solid lightgray ;
+   border-spacing: 0;   
+}
+th{background-color: lightgray;}
+.center-img {
+    display: block;
+    margin: auto;
+  }
+
+  .red{color: red;}
+
+  .blue
+  {
+      color:blue;
+  }
+.boldd{font-weight: bold;}
+
+.grey{color:grey;
+font-size: 70px;}
+
+.width
+{
+    width: 120px;
+}
+.reklama
+{
+    position: fixed;
+    top:10px;
+    
+}
+.float
+{
+    float:left;
+}
+.top-menu li{
+    
+    display:inline-block;/*Выстраивание пунктов меню в ряд*/
+    background:chartreuse;/*Цвет фона для пункта*/
+    position:relative;
+    left: 500px;
+
+}
+.top-menu{
+    position: sticky;
+    top: 20px;  
+    z-index: 5;  
+}
+.top-menu li:hover{
+    background:yellow;/*Цвет фона при наведение на пункт*/
+}
+.top-menu li a{
+    color:#222;/*Цвет шрифта в пункте*/
+    padding:5px 7px;/*Отступы для пункта*/ 
+    text-decoration:none;/*Убирается подчеркивание*/ 
+    display:block;
+}
+.teg
+{
+    position: absolute;
+    top:1000px;
+    left:0px;
+    width: 200px;
+}
+.footer_navigation 
+{ 
+    font-family: 'Open Sans',sans-serif;   
+     border-top: 2px solid #fc4c02;
+    background-color: #fafafa;    
+}

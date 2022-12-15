@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lab9.js">
+    </script>
+    <style>
+        .im
+        {
+        position: relative;
+        left: 10px;
+    }
+    </style>
+
+</head>
+
+<body>
+    
+    <h2>Книги</h2>
+    <table>
+        <tr>
+            <td>
+                <img src="qwe.jpg" width="31" height="31" name="png_1" style="visibility:hidden">
+            </td>
+            <td>
+                <img src="qwe.jpg" width="31" height="31" name="png_2" style="visibility:hidden">
+            </td>
+            <td>
+                <img src="qwe.jpg" width="31" height="31" name="png_3" style="visibility:hidden">
+            </td>
+            <td>
+                <img src="qwe.jpg" width="31" height="31" name="png_4" style="visibility:hidden">
+            </td>
+            <td>
+                <img src="qwe.jpg" width="31" height="31" name="png_5" style="visibility:hidden">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <input type="button" value="левее на 10px" onmouseover="Show(png_1)" onmouseout="Hide(png_1)" onclick="left_on_10()">
+
+            </td>
+            <td>
+
+                <input type="button" value="левее на 20px"  onmouseover="Show(png_2)" onmouseout="Hide(png_2)" onclick="left_on_20()">
+             
+            </td>
+            <td>
+
+                <input type="button" value="левее на 50px"  onmouseover="Show(png_3)" onmouseout="Hide(png_3)" onclick="left_on_50()">
+             
+            </td>
+            <td>
+                <input type="button" value="правее на 20px" onmouseover="Show(png_4)" onmouseout="Hide(png_4)" onclick="right_on_20()">
+
+            </td>
+            <td>
+                <input type="button" value="правее на 50px" onmouseover="Show(png_5)" onmouseout="Hide(png_5)" onclick="right_on_50()">
+
+            </td>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+   <div class="im">
+        <img src="book.jpg" name="myPict" width="350px" id="1" >
+    </div>
+    </form>
+</body>
+
+</html>

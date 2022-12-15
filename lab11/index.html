@@ -1,0 +1,140 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+    <title>Курс по Javascript</title>
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Общий div для всей в -->
+    <div class="maindiv" id="main_div">
+        <!-- Блок хедера (шапка сайта) -->
+        <div id="forheader">
+            <img src="images/logo.jpg" width="900" height="108" alt="Хедер" title="Шапка сайта" />
+        </div>
+        <!-- Конец блока хедера -->
+        <div id="forbody">
+            <h1 id="main_h1">Добро пожаловать на сайт компании MotoRent!</h1>
+            <p><span class="pq">Мотоцикл — двухколёсное транспортное средство</span>, с коляской или без неё, имеющее
+                максимальную массу не более 400 кг и/или
+                двигатель с объёмом более 50 см? в случае двигателя внутреннего сгорания (и/или
+                номинальную мощность более 4 кВт в случае электродвигателя. Впрочем, нормы
+                различаются в разных странах.) </p>
+            <!-- Блок с 4-мя изображениями -->
+            <div id="div_for_img">
+                <img id="img_1" src="images/moto4.jpg" width="200" height="125" alt="Мотоцикл 1" />
+                <img id="img_2" src="images/moto2.jpg" width="200" height="125" alt="Мотоцикл 2" />
+                <img id="img_3" src="images/moto3.jpg" width="200" height="125" alt="Мотоцикл 3" />
+                <img id="img_4" src="images/moto1.jpg" width="200" height="125" alt="Мотоцикл 4" />
+            </div>
+            <p><strong>На данный момент к прокату доступны следующие модели:</strong></p>
+            <!-- Ненумерованный список -->
+            <ol id="moto_models">
+                <li>Харлей Дэвидсон</li>
+                <li>Кроссовый мотоцикл</li>
+                <li>Гоночный мотоцикл</li>
+                <li>Концептуальный мотоцикл</li>
+            </ol>
+            <h3 id="my_h3"><span class="pq">Ссылки на сайты производителей</span> и спецификации мотоциклов:</h3>
+            <ul id="my_links">
+                <li><a href="http://www.yamaha-motor.ru" target="_blank" id="superlink">Yamaha Motors Russia</a></li>
+                <li><a href="documents/yamaha_fz6.PDF">Спецификация на мотоцикл Yamaha FZ6</a></li>
+            </ul>
+            <h3>Рассчет стоимости проката мотоциклов:</h3>
+            <!-- Форма -->
+            <form action="form.php" id="my_form">
+                <div id="bigform">
+                    <fieldset>
+                        <!-- Правый блок формы -->
+                        <div id="div_form_1">
+                            <fieldset id="innerfieldset">
+                                <legend>Дополнительные опции</legend>
+                                <p><strong>Нужны ли аксессуары?</strong></p>
+                                <div id="format">
+                                    <input type="checkbox" value="sh" name="dop_oprions" id="shlem" />
+                                    <label for="shlem">Шлем</label>
+                                    <input type="checkbox" value="bag" name="dop_oprions" id="bag" />
+                                    <label for="bag">Багажник</label>
+                                    <input type="checkbox" value="od" name="dop_oprions" id="od" />
+                                    <label for="od">Мото-одежда</label>
+                                </div>
+                                <p><strong>Нужна ли страховка?</strong></p>
+                                <div id="radio">
+                                    <input type="radio" id="inch_yes" value="yes" name="inch" />
+                                    <label for="inch">Да</label>
+                                    <input type="radio" id="inch_no" value="no" name="inch" />
+                                    <label for="inch">Нет</label>
+                                </div>
+                            </fieldset>
+                            <input type="submit" value="Отправить заявку" id="my_button" />
+                        </div>
+                        <!-- Левый блок формы -->
+                        <div id="div_form_2">
+                            <span>Модель:</span>
+                            <select name="moto" size="1" id="motoSelect">
+                                <option value="1">Харлей Дэвидсон (100$ в день)</option>
+                                <option value="2">Кроссовый мотоцикл (40$ в день)</option>
+                                <option value="3">Гоночный мотоцикл (150$ в день)</option>
+                                <option value="4">Концептуальный мотоцикл (340$ в день)</option>
+                            </select>
+                            <span>Дней:</span>
+                            <select name="days" size="1" id="daysSelect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <p><strong>Укажите Ваш email:</strong></p>
+                            <input type="text" id="email" value="Пример: you@site.ru" />
+                            <p><strong>Ваши пожелания:</strong></p>
+                            <textarea cols="45" rows="2" id="mytextarea"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+            <!-- Конец формы -->
+            <!-- Таблица с мотоциклами на продажу -->
+            <h3 id="sale">Мотоциклы на продажу (б/у):</h3>
+            <table width="550" id="moto_table" title="Таблица цен на мотоциклы" class="mototable">
+                <thead>
+                    <tr>
+                        <th><strong>Модель</strong></th>
+                        <th><strong>Цена</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Харлей Дэвидсон</td>
+                        <td>25000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Кроссовый мотоцикл</td>
+                        <td>10000</td>
+                        <td>25000</td>
+                        <td>25000</td>
+                    </tr>
+                    <tr>
+                        <td>Кроссовый мотоцикл</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>Кроссовый мотоцикл</td>
+                        <td>10000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="forresults"></div>
+        </div>
+        <!-- Блок футера -->
+        <div id="forfooter">
+            <img src="images/footer.jpg" width="900" height="67" alt="Футер" title="Производители" />
+        </div>
+        <!-- Конец футера -->
+    </div>
+</body>
+
+</html>

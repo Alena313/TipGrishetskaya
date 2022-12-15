@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script> 
+        let fruits = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+        
+        getRandomArbitary(0,3);
+        
+        function getRandomArbitary(min, max)
+        { 
+       let index=min + Math.floor(Math.random() * (max + 1 - min));
+       alert(fruits[index]);
+        }
+
+        </script>
+</head>
+<body>
+    <form>
+        <!-- <input type="text" id="1">
+        <input type="text" ondblclick="getRandomArbitary"> -->
+        
+    </form>
+    
+</body>
+</html>

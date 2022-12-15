@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <title>Document</title>
+  <script>
+    function sequence1(form) {
+      let start = Number(form._start.value);
+      let finish = Number(form._finish.value);
+      let step = Number(form._step.value);
+     alert(retur(start, finish, step));
+      
+    }
+    function retur(start, finish, step) {
+      let array = [];
+      let pmt = Math.floor(finish / step);
+      if (step == 1) {
+
+        pmt++;
+      }
+    
+      let begin = start;
+
+      for (let i = 0; i < pmt; i++) {
+        if (begin <= finish) {
+          array[i] = begin;
+          begin += step;
+        }
+      }
+    
+      return array;
+    }     
+
+
+    // function seq(form)
+    // {
+    //   let start = Number(form._start1.value);
+    //   let x = Number(form._x.value);
+    //   let step = Number(form._step1.value);
+      
+    //   let array = [];
+      
+    // take(array,step)
+    // }
+    // function gen(form)
+    // {
+    //   // let start = Number(form._start1.value);
+    //   // let finish = Number(form._finish1.value);
+    //   // let step = Number(form._step1.value);
+    //   var gen2 = seq(0, 2);
+    // }
+    // function take(seq,x)
+    // {
+    //   for(i=0;i<x;i++)
+    //   {
+    //     array[i]=start;
+    //   start+=step;
+    // }
+    
+    // }
+//     var generator = sequen(10, 3);
+// var generator2 = sequen(7, 1);
+// function sequn(x,y)
+//     {
+//       geni(x,y);
+//     }
+//     function geni()
+//     {
+
+//     }
+
+// function sequ(form)
+// {
+//   let start = Number(form._start1.value);
+//       let x = Number(form._x.value);
+//       let step = Number(form._step1.value);
+//     let y=gen(start,step)
+//     let arr=[];
+     
+// arr[0]=start;
+// arr[1]=gen(start,step);
+// arr.push(take (y,x));
+//      alert(take(y,x,start,step))
+
+// }
+// function gen(start, step)
+// {
+//   return(start+step);
+
+// }
+// function take(y,x)
+// {  
+//   let array = [];
+// for(let i=0;i<x;i++)
+// {
+//   array[i]=gen(y, step);
+
+//   alert(array[i]);
+// }
+// return array;
+// }
+
+
+
+function sequence(start, step) {  
+
+
+  let callNumber = start;
+
+  return function() {
+    var returnValue = callNumber; // значение для вывода
+    callNumber += step; // готовимся к следующему шагу
+    return returnValue;
+  }
+  
+}
+
+function take(gen, x) {
+  let arr = [];
+  for (let i = 0; i < x; i++) {
+    arr.push(gen());
+  }
+  return arr;
+}
+
+ function fin(form)
+ {
+  let start = Number(form._start1.value);
+  let x = Number(form._x.value);
+      let step = Number(form._step1.value);
+     var gen=( sequence(start,step));
+     
+     alert(take(gen,x))
+ }
+
+
+  </script>
+</head>
+
+<body>
+  <form id="form1">
+    введите начало массива
+    <input type="text" id="1" name="_start" value="0">
+    <hr>
+    введите конец массива
+    <input type="text" id="2" name="_finish" value="50">
+    <hr>
+    введите шаг массива
+    <input type="text" id="3" name="_step" value="1">
+    <hr>
+    <input type="submit" onclick="sequence1(form1)" value="получить результат">
+ <hr>
+ задание 2
+ <hr>
+ введите начало массива
+    <input type="text" id="1" name="_start1" value="0">
+    <hr>
+    введите кол-во 
+    <input type="text" id="2" name="_x" value="10">
+    <hr>
+    введите шаг массива
+    <input type="text" id="3" name="_step1" value="1">
+    <hr>
+    <input type="submit" onclick="fin(form1)" value="получить результат">
+ 
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<HTML>
+    <HEAD>
+    <title>part_2</title>
+    <script>
+    
+function srec(obj)
+{
+    var Ax=obj.x1.value;
+    var Ay=obj.y1.value;
+    var Bx=obj.x2.value;
+    var By=obj.y2.value;
+    var Cx=obj.x3.value;
+    var Cy=obj.y3.value;
+    var ABx=Math.abs(Bx-Ax);
+    var ABy=Math.abs(By-Ay);
+    var BCx=Math.abs(Bx-Cx);
+    var BCy=Math.abs(By-Cy);
+    var ACx=Math.abs(Ax-Cx);
+    var ACy=Math.abs(Ay-Cy);
+    var AB=Math.sqrt(Math.pow(ABx,2)+Math.pow(ABy,2));
+    var AC=Math.sqrt(Math.pow(ACx,2)+Math.pow(ACy,2));
+    var BC=Math.sqrt(Math.pow(BCx,2)+Math.pow(BCy,2));
+    var p=(AB+AC+BC)/2;
+
+    var S=Math.sqrt(p*(p-AB)*(p-BC)*(p-AC));
+    obj.res.value=S;
+}
+    </script>
+
+    </HEAD>
+    <BODY>
+    <P>Вычисление площади квадрата</P>
+    <FORM name="form1">
+   Координаты точки A: <input type="text" size=5 name="x1" >
+   <input type="text" size=5 name="y1" >
+    <hr>
+    Координаты точки B: <input type="text" size=5 name="x2" >
+    <input type="text" size=5 name="y2" >
+    <hr>
+    Координаты точки C: <input type="text" size=5 name="x3">
+    <input type="text" size=5 name="y3" >
+    <hr>
+    Площадь: <input type="text" size=7 name="res" onclick="srec(form1)"><hr>
+    <input type="reset" value=Обновить>
+    </FORM>
+    </BODY>
+    </HTML>

@@ -1,0 +1,28 @@
+<HTML>
+
+<HEAD>
+    <title>part_3</title>
+    <script>
+        function srec(obj) {
+
+            var X = obj.x1.value;
+            var Y = obj.y1.value;
+            var Z = Math.sqrt(Math.pow(X, 2) + Math.pow(Y, 2));
+            obj.res.value = Z;
+        }
+    </script>
+</HEAD>
+
+<BODY>
+    <P>Вычисление площади квадрата</P>
+    <FORM name="form1">
+        X: <input type="text" size=5 name="x1">
+        Y: <input type="text" size=5 name="y1">
+        <hr>
+        Площадь: <input type="text" size=7 name="res" ondblclick="srec(form1)">
+        <hr>
+        <input type="reset" value=Обновить>
+    </FORM>
+</BODY>
+
+</HTML>

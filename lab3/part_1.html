@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка значений из формы</title>
+    <script language="JavaScript">
+        
+        function care (a, h)
+        {
+        var s=(a*h)/2;
+        document.write ("Площадь прямоугольного треугольника равна ",s);
+        return s
+        }
+        
+        </script>
+</head>
+<body>
+    <P>Пример сценария со значениями из формы</P>
+<FORM name="form1">
+Основание: <input type="text" size=5 name="st1"><hr>
+Высота: <input type="text" size=5 name="st2"><hr>
+<input type="button" value=Вычислить
+onClick="care(document.form1.st1.value, document.form1.st2.value)"> 
+</FORM>
+
+</body>
+</html>

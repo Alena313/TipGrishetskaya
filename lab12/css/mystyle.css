@@ -1,0 +1,136 @@
+﻿body
+{
+	background-color: #151424;
+	background-image: url('../images/bg000000.jpg');
+	background-repeat: no-repeat;
+	color: #646464;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.maindiv
+{
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding: 0;
+	width: 900px;
+}
+#forbody
+{
+	padding: 20px;
+}
+#main_h1
+{
+	color: #2C2C2C;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+h2
+{
+	color: #2C2C2C;
+	font-size: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+p
+{
+	margin-left: 0;
+}
+p strong
+{
+	color: #2C2C2C;
+}
+h3
+{
+	color: #2C2C2C;
+}
+.mototable
+{
+	border: 1px solid #cccccc;
+	margin-top: 15px;
+}
+.mototable thead tr
+{
+	background-color: #f6f6f6;
+	height: 20px;
+	padding-left: 20px;
+}
+.mototable tbody tr td
+{
+	padding-left: 20px;
+	text-align: left;
+}
+#myform div
+{
+	margin: 20px;
+}
+#bigform
+{
+	width: 850px;
+}
+#bigform span
+{
+	color: #2c2c2c;
+	font-size: 11px;
+}
+#div_form_1
+{
+	float: right;
+	width: 420px;
+}
+#div_form_2
+{
+	width: 420px;
+}
+#div_form_1 #days
+{
+	margin-left: 15px;
+}
+#my_button, select
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	color: #2C2C2C;
+	font-size: 11px;
+	margin-left: 3px;
+}
+a
+{
+	color: #505391;
+}
+fieldset
+{
+	background-color: #e7e7f0;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	width: 825px;
+}
+#innerfieldset
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	width: 385px;
+}
+legend
+{
+	color: #2c2c2c;
+	font-size: 11px;
+}
+input
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	font-size: 11px;
+}
+textarea
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+}
+#sale
+{
+	margin-top: 20px;
+}
